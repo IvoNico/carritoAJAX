@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+}
+
+.productos{
+    margin: 0 auto;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 20px 5px rgb(105, 103, 103);
+    border-radius: 5px;
+    height: 70vh;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px 5px rgb(180, 178, 178);
+}
+.card-title, .btn-floating {
+    padding: 5px;
+}
+.card-image{
+    display: flex;
+    flex-direction: column;
+    
+}
+.img, .card-panel{
+    width: 300px;
+    border-radius: 5px;
+}
+.fas, .fa-cart-plus{
+    background-color: black;
+    color: white;
+}
+.carritos{
+    background-color: black;
+    color: darkgoldenrod;
+}
+.btncarrito{
+    width: 50px;
+    height: 8vh;
+    border-radius: 5px;
+    background-color: black;
+    color: darkgoldenrod;
+}
+.product-title, .card-title {
+    color: darkgoldenrod;
+    font-size: 1.3rem;
+    padding: 8px;
+
+}
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: darkgoldenrod;
+    padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: darkgoldenrod;
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+    
+}
+.card .card-image .card-title{
+    position:unset
+}
+.productoEnCarrito{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+}
+.productoEnCarrito{
+    box-shadow: 5px 5px 5px 5px rgb(83, 82, 82);
+    margin: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    color: wheat;
+    background-color: rgb(82, 79, 79);
+}
+.boton-eliminar{
+    height: 5vh;
+    background-color: rgb(39, 38, 38);
+}
+.btneliminar{
+    background-color: black;
+}
+.btn-floating.halfway-fab {
+    position: absolute;
+    right: -30px;
+    
+}
+.card-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
